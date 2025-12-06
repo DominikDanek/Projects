@@ -1,0 +1,110 @@
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+.header {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: darkseagreen;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(119, 141, 119);
+}
+.top-nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.pagination-row {
+    width: 100%;
+    max-width: 10000px;
+    padding: 8px 0;
+    border-top: 1px solid rgb(73, 77, 72);
+}
+.table-wrapper {
+    width: 50%;
+    min-width: 300px;
+    margin: 16px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: darkseagreen;
+}
+button {
+    background: transparent;
+    border: 1px solid darkslategray;
+    color: darkslategray;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+}
+#main-nav a button {
+    font-weight: 600;
+}
+
+.table_button {
+    background:#dddddd;
+    border: 1px solid rgb(67, 67, 67);
+    color: rgb(62, 62, 62);
+    padding: 6px 10px;
+    border-radius: 2px;
+    cursor:crosshair;
+    font-family: inherit;
+}
+/* .table_button:hover {
+    background: rgba(73, 117, 61, 0.346);
+} */
+button:hover,.table_button:hover {
+    background: rgba(73, 117, 61, 0.346);
+}
+.top-nav button.active {
+  background: rgba(124, 152, 116, 0.346);
+  color: white;
+}
+.top-nav a.active {
+  background: rgba(73, 117, 61, 0.346);
+}
+article section {
+    border: 2px solid rgb(129, 161, 129);
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+header.header > nav.top-nav a.active button {
+    border-bottom: 2px solid #ffffff;
+}
